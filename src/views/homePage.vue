@@ -649,9 +649,6 @@
                 <el-button type="danger" class="dialog-footer-button" @click="deleteData">
                     删除存档
                 </el-button>
-                <el-button type="primary" class="dialog-footer-button" @click="copyContent('qq')">
-                    官方群聊
-                </el-button>
                 <el-button type="success" class="dialog-footer-button" @click="copyContent('url')">开源地址</el-button>
             </div>
         </el-dialog>
@@ -1848,8 +1845,8 @@
                 return `${num3.toFixed(2)}%`
             },
             copyContent (type) {
-                const content = type == 'qq' ? '920930589' : 'https://github.com/coolxitech/vue-XiuXianGame';
-                this.$prompt('', type == 'qq' ? '官方群聊' : '开源地址', {
+                const content = type == 'qq' ? '' : 'https://github.com/VerSion1312/XiuXian';
+                this.$prompt('', type == 'qq' ? '' : '开源地址', {
                     inputValue: content,
                     showCancelButton: false,
                     confirmButtonText: '复制',
