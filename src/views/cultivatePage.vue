@@ -91,7 +91,7 @@
                             this.texts = [...this.texts, `当前境界修为已满, 你需要通过击败<span style="color: #f56c6c;">(${this.player.taskNum} / ${this.player.level})</span>个敌人证道突破`];
                             return;
                         }
-                        this.player.taskNum = 0;
+                        // this.player.taskNum = 0;
                         this.player.level++;
                         this.player.points += 3;
                         this.player.health = this.player.maxHealth;
