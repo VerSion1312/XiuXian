@@ -307,7 +307,7 @@
                                 return;
                             }
                             // 清空已击杀敌人
-                            this.player.taskNum = 0;
+                            // this.player.taskNum = 0;
                             // 增加境界
                             this.player.level++;
                             // 增加点数
