@@ -23,6 +23,7 @@ export const useMainStore = defineStore('main', {
             zc: false,
             age: 1,
             pet: {},
+            time: 0,
             name: '玩家',
             dark: false,
             npcs: [],
@@ -48,7 +49,7 @@ export const useMainStore = defineStore('main', {
             defense: 10,
             taskNum: 0,
             version: 0.8,
-            currency: 0,
+            currency: 0,            
             maxHealth: 100,
             inventory: [],
             isNewbie: false,
@@ -66,11 +67,26 @@ export const useMainStore = defineStore('main', {
             },
             script: '',
             cultivation: 0,
+            currentTitle: null,
             reincarnation: 0,
             maxCultivation: 100,
             backpackCapacity: 50,
             sellingEquipmentData: [],
-            highestTowerFloor: 1
+            highestTowerFloor: 1,
+            rewardedTowerFloors: [],
+            nextGameTimes: {
+                rps: null,
+                dice: null,
+                fortune: null,
+                secretrealm: 0,
+                gamblingStone: null
+            },
+            gameWins: 0,
+            gameLosses: 0,
+            checkinDays: 0,
+            checkinStreak: 0,
+            lastCheckinDate: null,
+            fortuneTellingDate: null
         },
         // 怪物信息
         monster: {

@@ -5,9 +5,9 @@ import 'element-plus/dist/index.css';
 import 'normalize.css/normalize.css';
 import router from '@/plugins/router';
 import { useMainStore } from '@/plugins/store';
-import ElementPlus, { ElNotification } from 'element-plus';
 import * as ElementPlusIconsVue from '@element-plus/icons-vue';
 import piniaPluginPersistedstate from 'pinia-plugin-persistedstate';
+import ElementPlus, { ElNotification } from 'element-plus';
 
 const app = createApp(App);
 
@@ -58,6 +58,8 @@ const dropdownTypeObject = {
     dodge: '闪避'
 };
 
+
+app.config.globalProperties.$dropdownTypeObject = dropdownTypeObject;
 app.config.globalProperties.$dropdownType = Object.entries(dropdownTypeObject).map(([type, name]) => ({ type, name }));
 
 app.config.globalProperties.$genre = {
